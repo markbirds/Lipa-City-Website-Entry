@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipa City – Official Website</title>
+  <link rel="stylesheet" href="static/styles/main.css">
+  <link rel="stylesheet" href="static/styles/fontawesome-free-5.15.1-web/css/all.min.css">
+</head>
+<body onload="fadeOut()">
+  <div id="loader" class="loader-wrapper">
+    <img src="static/images/logo.png" alt="preloader" width="100px;">
+  </div>
+  <div class="container" style="display: none;" id="home">
+    <header>
+      <div id="date">
+      </div>
+      <div class="topnav" id="navbar">
+        <a class="btn active" href="#date">Home</a>
+        <a class="btn" href="links/news.html">News</a>
+        <a class="btn" href="links/event.html">Event</a>
+        <a class="btn" href="links/government.html">Our Government</a>
+        <a class="btn" href="links/services.html">Services</a>
+        <a class="btn" href="links/contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <img src="static/images/header.jpg" alt="header" width="100%">
+    </header>
+    <main>
+      <article class="flex-container-reverse">
+        <section id="covid_updates">
+          <div>
+            <header class="card card-header">
+              <h1>COVID-19 UPDATES</h1>
+              <p style="text-align: center;">Data as of October 26,2020 - 7:00 PM</p>
+            </header>
+            <div class="card card-recovery">
+              <p>Recoveries: 884</p>
+              <p>Recovered today: 35</p>
+            </div>
+            <div class="card card-header">
+              <p>Active Cases: 70</p>
+              <p>New Cases: 0</p>
+            </div>
+            <div class="card card-header">
+              <p>Total Cases: 1022</p>
+            </div>
+            <div class="card card-header">
+              <p>Deaths: 0</p>
+            </div>
+            <div class="card card-header">
+              <p>Suspects: 0</p>
+            </div>
+          </div>
+        </section>
+        <section id="youtube">
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/O2tbny781GQ"></iframe>
+        </section>
+      </article>
+      <article class="flex-container-reverse" style="padding: 10px 0;">
+        <section id="upcoming-event">
+          <header>Upcoming Event</header>
+          <div style="text-align: center;margin: 10px 0;">
+            <img src="static/images/event-main.jpg" alt="webdesign" width="90%">
+            <div>
+              <h1 style="margin: 10px 0 2px 0;">Drive-in Cinema</h1>
+              <p>October 30-31,2020</p>
+             </div>
+          </div>
+        </section>
+        <section id="latest-news">
+          <header>Latest News</header>
+          <div class="flex-container" style="padding: 10px;">
+            <div id="flex-left">
+              <img src="static/images/news1.jpg" alt="webdesign" width="90%"> 
+            </div>
+            <div id="flex-right">
+                <p>Web Design Competition for Lipenos</p>
+                <p style="text-indent: 50px;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum dolorem hic velit, ab doloremque aspernatur ex amet voluptatum quasi laborum eaque facere, magnam qui harum nostrum quae necessitatibus consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="read-more">Read more</p>
+            </div>
+          </div>
+          <div class="flex-container" style="padding: 10px;">
+            <div id="flex-left">
+              <img src="static/images/news2.jpg" alt="webdesign" width="90%"> 
+            </div>
+            <div id="flex-right">
+                <p>Kolehiyo ng Lungsod ng Lipa, Kinilala ng CHED</p>
+                <p style="text-indent: 50px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum dolorem hic velit, ab doloremque aspernatur ex amet voluptatum quasi laborum eaque facere, magnam qui harum nostrum quae necessitatibus consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="read-more">Read more</p>
+            </div>
+          </div>
+        </section>
+
+      </article>
+      <article id="slideshow">
+        <header>Lipa City Government</header>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="static/images/slideshow1.jpg" style="width:100%">
+          </div>          
+          <div class="mySlides fade">
+            <img src="static/images/slideshow2.jpg" style="width:100%">
+          </div>       
+          <div class="mySlides fade">
+            <img src="static/images/slideshow3.jpg" style="width:100%">
+          </div>         
+        </div>
+        <br>         
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <section class="flex-container">
+          <div>
+            <i class="fas fa-fist-raised"></i>
+            <h1>Empower People</h1>
+          </div>
+          <div>
+            <i class="fas fa-landmark"></i>
+            <h1>Better Governance</h1>
+            </div>
+          <div>
+            <i class="fas fa-people-carry"></i>
+            <h1>Advance Service</h1>
+          </div>
+        </section>
+      </article>
+      <footer>
+        <div class="flex-container">
+          <section>
+            <h2 style="text-align: center;margin: 5px 0;">Contact Us</h2>
+            <hr style="margin-bottom: 5px;">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" rows="5" id="message"></textarea>
+            </div>
+            <div style="text-align: right;">
+              <button class="button btn-light">Send</button>
+            </div>
+
+          </section>
+          <section>
+            <h2 style="text-align: center;margin: 5px 0;">Sitemap</h2>
+            <hr>
+            <div style="text-align: center;">
+              <a href="#date">Home</a>
+              <a href="links/news.html">News</a>
+              <a href="links/event.html">Event</a>
+              <a href="links/government.html">Our Government</a>
+              <a href="links/services.html">Services</a>
+              <a href="links/contact.html">Contact</a>  
+            </div>
+          </section>
+          <section id="hotlines" style="text-align: center">
+            <h2 style="text-align: center;margin: 5px 0;">Emergency Hotlines</h2>
+            <hr>
+            <div>
+              <strong>Lipa City Mayor's Office:</strong><br>
+              7745169
+            </div>
+            <div>
+              <strong>PNP Lipa City:</strong><br>
+              702 3832<br>
+              0977-744-9692
+            </div>
+            <div>
+              <strong>BFP Lipa City:</strong><br>
+              757 4618<br>
+              0927-575-8065
+            </div>
+            <div>
+              <strong>National Emergency:</strong><br>
+              911
+            </div>
+            <div>
+              <strong>Metro Lipa Water District:</strong><br>
+              756 1611<br>
+              756 1118
+            </div>
+            <div>
+              <strong>Mary Mediatrix Medical Center:</strong><br>
+              773 6800
+            </div>
+            <div>
+              <strong>Batelec 2:</strong><br>
+              756 1424<br>
+              756 6337
+            </div>
+            <div>
+              <strong>Citizen's Complaint Hotline:</strong><br>
+              8888
+            </div>
+          </section>      
+        </div>
+        <div id="copyright" style="display: flex;">
+          <div style="flex:70%;">
+            City Government of Lipa &copy; 2020
+          </div>
+          <div style="flex: 30%;text-align: right;font-size: 18px;">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+  <script src="static/scripts/main.js"></script>
+  <script src="static/scripts/header-date.js"></script>
+  <script> 
+
+  function fadeOut(){
+    loader = document.getElementById("loader");
+    home = document.getElementById("home");
+    setTimeout(function(){
+      loader.classList.add("loader-fadeout");  
+    },3000);   
+    setTimeout(function(){
+      loader.style.display = "none";  
+      home.style.display = "block"; 
+    },4000);  
+    startTime();
+  }  
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+</html>

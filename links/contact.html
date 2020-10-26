@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipa City – Official Website</title>
+  <link rel="stylesheet" href="../static/styles/contact.css">
+  <link rel="stylesheet" href="../static/styles/fontawesome-free-5.15.1-web/css/all.min.css">
+</head>
+<body onload="startTime()">
+  <div class="container">
+    <header>
+      <div id="date">
+      </div>
+      <div class="topnav" id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="event.html">Event</a>
+        <a href="government.html">Our Government</a>
+        <a href="services.html">Services</a>
+        <a href="#date">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <img src="../static/images/header.jpg" alt="header" width="100%">
+    </header>
+    <main>
+    <article class="flex-container">
+      <section style="flex: 50%;">
+          <header>Contact Us</header>
+          <form style="padding: 10px;">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" rows="5" id="message"></textarea>
+            </div>
+            <div style="text-align: right;">
+              <button class="button btn-dark">Send</button>
+            </div>
+          </form>
+
+      </section>
+      <section style="flex: 50%;text-align: center;">
+        <header>Emergency Hotlines</header>
+        <div>
+          <strong>Lipa City Mayor's Office:</strong><br>
+          7745169
+        </div>
+        <div>
+          <strong>PNP Lipa City:</strong><br>
+          702 3832<br>
+          0977-744-9692
+        </div>
+        <div>
+          <strong>BFP Lipa City:</strong><br>
+          757 4618<br>
+          0927-575-8065
+        </div>
+        <div>
+          <strong>National Emergency:</strong><br>
+          911
+        </div>
+        <div>
+          <strong>Metro Lipa Water District:</strong><br>
+          756 1611<br>
+          756 1118
+        </div>
+        <div>
+          <strong>Mary Mediatrix Medical Center:</strong><br>
+          773 6800
+        </div>
+        <div>
+          <strong>Batelec 2:</strong><br>
+          756 1424<br>
+          756 6337
+        </div>
+        <div>
+          <strong>Citizen's Complaint Hotline:</strong><br>
+          8888
+        </div>
+      </section>      
+    </article>
+    <footer>
+      <div class="flex-container">
+        <section>
+          <h2 style="text-align: center;margin: 5px 0;">Sitemap</h2>
+          <hr>
+          <div style="text-align: center;">
+            <a href="../index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="event.html">Event</a>
+            <a href="government.html">Our Government</a>
+            <a href="services.html">Services</a>
+            <a href="#date">Contact</a>  
+          </div>
+        </section>
+
+      </div>
+      <div id="copyright" style="display: flex;">
+        <div style="flex:70%;">
+          City Government of Lipa &copy; 2020
+        </div>
+        <div style="flex: 30%;text-align: right;font-size: 18px;">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fas fa-envelope-square"></i>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+<script src="../static/scripts/main.js"></script>
+<script src="../static/scripts/header-date.js"></script>
+</body>
+</html>
